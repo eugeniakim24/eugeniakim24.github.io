@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LH360 Web</title>
+    <meta name="description" content="Hello, WebVR! - A-Frame">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+</head>
+<body>
+<a-scene>
+    <a-assets>
+        <a-asset-item id="mannequin1" src="middle.gltf"></a-asset-item>
+        <a-asset-item id="mannequin2" src="elated.gltf"></a-asset-item>
+        <a-asset-item id="mannequin3" src="lethargic.gltf"></a-asset-item>
+        <a-asset-item id="mannequin4" src="irritable.gltf"></a-asset-item>
+        <a-asset-item id="mannequin5" src="racing.gltf"></a-asset-item>
+        <a-asset-item id="mannequin6" src="distracted.gltf"></a-asset-item>
+    </a-assets>
+    <!--<a-plane position="0 0 -4" rotation="-90 0 0" width="50" height="50" color="#635f5b"></a-plane>-->
+    <a-cylinder position="0 -0.5 -4" radius="50" height="0" color="#635f5b"></a-cylinder>
+    <a-gltf-model src="#mannequin1" position="1 0 -3" animation-mixer="loop:repeat" scale="0.1 0.1 0.1"></a-gltf-model>
+    <a-gltf-model src="#mannequin2" position="4 0 -3" animation-mixer="loop:repeat" scale="0.1 0.1 0.1"></a-gltf-model>
+    <a-gltf-model src="#mannequin3" position="-4 0 -2" rotation="0 90 0" animation-mixer="loop:repeat" scale="0.1 0.1 0.1"></a-gltf-model>
+    <a-gltf-model src="#mannequin4" position="-4 0 7" rotation="0 150 0" animation-mixer="loop:repeat" scale="0.1 0.1 0.1"></a-gltf-model>
+    <a-gltf-model src="#mannequin5" position="-6 0 -8" rotation="0 45 0" animation-mixer="loop:repeat" scale="0.1 0.1 0.1"></a-gltf-model>
+    <a-gltf-model src="#mannequin6" position="3 0 5" rotation="0 225 0" animation-mixer="loop:repeat" scale="0.1 0.1 0.1"></a-gltf-model>
+
+
+</a-scene>
+</body>
+</html>
